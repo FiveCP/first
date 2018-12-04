@@ -16,7 +16,7 @@ import io.netty.handler.codec.string.StringDecoder;
 public class NettyService {
 
 	public static void main(String[] args){
-		int port = 9998;
+		final int port = 9998;
 		try {
 			new NettyService().bind(port);
 		} catch (Exception e) {
